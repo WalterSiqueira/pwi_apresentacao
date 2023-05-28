@@ -8,6 +8,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    border: solid green 2px;
 }
     .titulo {
         grid-area: titulo;
@@ -27,18 +28,25 @@ main {
         '. . .'
         'topicos . artigos';
     grid-template-columns: 45vw 5vw 45vw;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 15vh 80vh;
 }
-    .topicos {
+    .topicos_bloco {
         width: 100%;
         height: 100%;
         grid-area: topicos;
+        border: solid green 2px;
     }
+        .topicos {
+            font-size: 1.4em;
+            margin: 20% 0 0 15%;
+        }
+
     .artigos {
         width: 100%;
         height: 100%;
         overflow-y: auto;
         grid-area: artigos;
+        border: solid green 2px;
     }
 article {
     border: solid 1px black;
