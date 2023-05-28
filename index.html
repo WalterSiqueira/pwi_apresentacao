@@ -7,6 +7,114 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-    
+        <main>
+            <header>
+                <h1 class="titulo">Especificidade</h1>
+                <h2 class="walter">Walter Barboza Siqueira</h2>
+                <h2 class="nicolas">Nicolas Ferreira Souza</h2>
+            </header>
+            <section class="topicos">
+                <ol>
+                    <li><a href="#conceitos">Conceito geral</a></li>
+                    <li><a href="#id">Seletor de ID</a></li>
+                    <li><a href="#classe">Seletor de classe</a></li>
+                    <li><a href="#atributo">Seletor de atributo</a></li>
+                    <li><a href="#pseudo-classe">Seletor de pseudo-classe</a></li>
+                    <li><a href="#elemento">Seletor de elemento</a></li>
+                    <li><a href="#pseudo-elemento">Seletor de pseudo-elemento</a></li>
+                    <li><a href="#importância">Importância do estilo</a></li>
+                </ol>
+            </section>
+            <section class="artigos">
+                <article id="conceitos">
+                    <h2>Conceito geral</h2>
+                    <p>A especificidade é uma forma de determinar qual regra CSS será aplicada a um elemento quando existem regras conflitantes.
+                    Ela é calculada com base em diferentes componentes, como seletores de ID, classes, atributos, pseudo-classes, seletores de elemento e pseudo-elementos.
+                    Cada componente contribui para a contagem da especificidade, onde valores mais altos indicam maior precedência.</p>
+                </article>
+                <article id="id">
+                    <h2>Seletor de ID</h2>
+                    <p id="explicacao_id">O seletor de ID seleciona elementos com base em seus IDs únicos. Ele tem um peso maior do que os outros tipos de seletores, o que significa que uma regra com um seletor de ID terá precedência sobre as outras.</p>
+                    <ul id="exemplos_id">
+                        <li>Exemplos</li>
+                        <ol>
+                            <li>#header  Seleciona o elemento com o ID "header".</li>
+                            <li>#sidebar Seleciona o elemento com o ID "sidebar".</li>
+                            <li>#content Seleciona o elemento com o ID "content".</li>
+                        </ol>
+                    </ul>
+                </article>
+                <article id="classe">
+                    <h2>Seletor de classe</h2>
+                    <p id="explicacao_classe">O seletor de classe seleciona elementos com base nas classes atribuídas a eles. Ele tem um peso médio em termos de especificidade.</p>
+                    <ul id="exemplos_classe">
+                        <li>Exemplos</li>
+                        <ol>
+                            <li>.destaque Seleciona os elementos que possuem a classe "destaque".</li>
+                            <li>.botao Seleciona os elementos que possuem a classe "botao".</li>
+                            <li>.menu-item Seleciona os elementos que possuem a classe "menu-item".</li>
+                        </ol>
+                    </ul>
+                </article>
+                <article id="atributo">
+                    <h2>Seletor de atributo</h2>
+                    <p id="explicacao_atributo">O seletor de atributo seleciona elementos com base em atributos específicos. Ele tem um peso médio em termos de especificidade.</p>
+                    <ul id="exemplos_atributo">
+                        <li>Exemplos</li>
+                        <ol>
+                            <li>[href] Seleciona os elementos que possuem o atributo href definido.</li>
+                            <li>[type="text"] Seleciona os elementos que possuem o atributo type definido como "text".</li>
+                            <li>[data-info] Seleciona os elementos que possuem o atributo data-info definido.</li>
+                        </ol>
+                    </ul>
+                </article>
+                <article id="pseudo-classe">
+                    <h2>Seletor pseudo-classe</h2>
+                    <p id="explicacao_pseudo-classe">O seletor pseudo-classe seleciona elementos com base em estados ou interações específicas. Ele tem um peso médio em termos de especificidade.</p>
+                    <ul id="exemplos_pseudo-classe">
+                        <li>Exemplos</li>
+                        <ol>
+                            <li>:hover Seleciona um elemento quando o cursor do mouse está sobre ele.</li>
+                            <li>:first-child Seleciona o primeiro elemento filho de seu pai.</li>
+                            <li>:nth-child(odd) Seleciona todos os elementos ímpares entre os elementos irmãos.</li>
+                        </ol>
+                    </ul>
+                </article>
+                <article id="elemento">
+                    <h2>Seletor de elemento</h2>
+                    <p id="explicacao_elemento">O seletor de elemento seleciona elementos com base em seus nomes de tag. Ele tem o menor peso em termos de especificidade.</p>
+                    <ul id="exemplos_elemento">
+                        <li>Exemplos</li>
+                        <ol>
+                            <li>div Seleciona todos os elementos <code>&lt;div&gt;</code> .</li>
+                            <li>p Seleciona todos os elementos <code>&lt;p&gt;</code>.</li>
+                            <li>a Seleciona todos os elementos <code>&lt;a&gt;</code>.</li>
+                        </ol>
+                    </ul>
+                </article>
+                <article id="pseudo-elemento">
+                    <h2>Seletor pseudo-elemento</h2>
+                    <p id="explicacao_pseudo-elemento">O seletor pseudo-elemento seleciona partes específicas de um elemento. Ele tem o menor peso em termos de especificidade.</p>
+                    <ul id="exemplos_pseudo-elemento">
+                        <li>Exemplos</li>
+                        <ol>
+                            <li>::before Seleciona o conteúdo inserido antes do elemento.</li>
+                            <li>::after Seleciona o conteúdo inserido após o elemento.</li>
+                            <li>::first-line Seleciona a primeira linha de texto dentro do elemento.</li>
+                        </ol>
+                    </ul>
+                </article>
+                <article id="importância">
+                    <h2>Importância do estilo</h2>
+                    <p id="explicacao_importancia">A importância do estilo é uma forma de dar prioridade a uma regra CSS por ter a especificidade mais alta e sobrescreve todas as outras regras de especificidade.</p>
+                    <ul id="exemplos_importancia">
+                        <li>Exemplos</li>
+                        <ol>
+                            <li>!important Da prioridade a regra de estilo onde se encontra</li>
+                        </ol>
+                    </ul>
+                </article>
+            </section>
+        </main>
     </body>
 </html>
