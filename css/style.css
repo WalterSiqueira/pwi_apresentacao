@@ -1,14 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 header {
     display: grid;
     grid-template-areas: 
-        'walter titulo nicolas';
+        '. titulo .';
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    border: solid green 2px;
+    border: solid gold 2px;
+    height: 10vh;
+    width: 98vw;
+    background-color: black;
+    color: white;
 }
     .titulo {
         grid-area: titulo;
@@ -16,49 +22,61 @@ header {
     }
 main {
     display: grid;
+    background-color: black;
+    width: 98vw;
+    height:100%;
     grid-template-areas: 
-        '. . .'
-        'topicos . artigos'
-        'tabela tabela tabela';
-    grid-template-columns: 47vw 3.5vw 47vw;
-    grid-template-rows: 12vh 80vh 30vh;
-    grid-row-gap: 5vh;
+        '. .'
+        'topicos artigos';
+    grid-template-columns: 20vw 2fr;
+    grid-template-rows: 10vh 89.5vh;
 }
     .topicos_bloco {
         width: 100%;
         height: 100%;
         grid-area: topicos;
-        border: solid green 2px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        border: solid gold 2px;
     }
-        .topicos {
-            font-size: 1.4em;
-            margin: 20% 0 0 15%;
-        }
 
     .artigos {
         width: 100%;
         height: 100%;
         overflow-y: auto;
         grid-area: artigos;
-        border: solid green 2px;
+        border: solid gold 2px;
     }
     .tabela_sec {
         grid-area: tabela;
-        border: solid green 2px;
+        border: solid gold 2px;
     }
 article {
-    border: solid 1px black;
+    border: solid 1px gold;
     padding: 5px;
+    background-color: white;
 }
 
 p {
     font-size: 1.2em;
 }
 
-li {
-    font-size: 1.2em;
+img {
+    width: 100%;
+    height: 100%;
 }
 
-img {
-    margin: 5vh 0 0 15vw;
+button {
+    height: 10%;
+    width: 90%;
+    margin: 0 0 0 5%;
+    background-color: black;
+    border: solid gold 2px;
+    border-radius: 1vw;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
 }
