@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 header {
     display: grid;
@@ -12,18 +13,20 @@ header {
     top: 0;
     border: solid gold 2px;
     height: 10vh;
-    width: 98vw;
+    width: 99.75vw;
     background-color: black;
     color: white;
 }
     .titulo {
         grid-area: titulo;
         text-align: center;
+        font-size: 3em;
+        margin: 2vh 0 0 0;
     }
 main {
     display: grid;
     background-color: black;
-    width: 98vw;
+    width: 100%;
     height:100%;
     grid-template-areas: 
         '. .'
@@ -42,7 +45,7 @@ main {
     }
 
     .artigos {
-        width: 100%;
+        width: 99.7%;
         height: 100%;
         overflow-y: auto;
         grid-area: artigos;
